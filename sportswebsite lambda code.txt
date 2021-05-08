@@ -1,0 +1,18 @@
+def lambda_handler(event, context):
+    print("In lambda handler")
+    
+    resp = {
+        "statusCode": 200,
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+        },
+        for record in event['Records']:
+            bucket = record['s3']['serverlesscomputing']['index.html']
+            key = record['s3']['index.html']['index.html']
+            folder =  os.path.split(index.html)[0]
+            folder_path = os.path.join(serverlesscomputing, index.html)
+            full_path = os.path.join(serverlesscomputing, index.html)
+            s3_url = "s3://serverlessbucketsports" + https://serverlessbucketsports.s3.ap-south-1.amazonaws.com/index.html
+    }
+    
+    return resp
